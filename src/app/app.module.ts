@@ -8,6 +8,8 @@ import { HttpClientModule } from "@angular/common/http";
 import {MatCardModule} from "@angular/material/card";
 import {ProductServiceModule} from "./services/product.service-module";
 import {ProductListComponentModule} from "./components/product-list/product-list.component-module";
+import {CategoriesListComponentModule} from "./components/categories-list/categories-list.component-module";
+import {CategoriesServiceModule} from "./services/categories.service-module";
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import {ProductListComponentModule} from "./components/product-list/product-list
     HttpClientModule,
     MatCardModule,
     ProductServiceModule,
-    ProductListComponentModule
+    ProductListComponentModule,
+    CategoriesListComponentModule,
+    CategoriesServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
