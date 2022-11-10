@@ -10,6 +10,8 @@ import {ProductServiceModule} from "./services/product.service-module";
 import {ProductListComponentModule} from "./components/product-list/product-list.component-module";
 import {CategoriesListComponentModule} from "./components/categories-list/categories-list.component-module";
 import {CategoriesServiceModule} from "./services/categories.service-module";
+import {CryptoListComponentModule} from "./components/crypto-list/crypto-list.component-module";
+import {CryptoServiceModule} from "./services/crypto.service-module";
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import {CategoriesServiceModule} from "./services/categories.service-module";
     ProductServiceModule,
     ProductListComponentModule,
     CategoriesListComponentModule,
-    CategoriesServiceModule
+    CategoriesServiceModule,
+    CryptoListComponentModule,
+    CryptoServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
