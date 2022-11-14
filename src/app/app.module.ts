@@ -12,6 +12,8 @@ import {CategoriesListComponentModule} from "./components/categories-list/catego
 import {CategoriesServiceModule} from "./services/categories.service-module";
 import {CryptoListComponentModule} from "./components/crypto-list/crypto-list.component-module";
 import {CryptoServiceModule} from "./services/crypto.service-module";
+import {NewemployeeService} from "./services/newemployee.service";
+import {NewemployeeServiceModule} from "./services/newemployee.service-module";
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import {CryptoServiceModule} from "./services/crypto.service-module";
     CategoriesServiceModule,
     CryptoListComponentModule,
     CryptoServiceModule,
+    NewemployeeServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

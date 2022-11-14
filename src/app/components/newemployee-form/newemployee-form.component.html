@@ -1,0 +1,9 @@
+<form [formGroup]="newemployee" (ngSubmit)="onNewemployeeSubmitted(newemployee)">
+  <div><mat-form-field appearance="fill"><mat-label>Name</mat-label>
+    <input matInput type="text" placeholder="Name" formControlName="name" required>
+    <mat-error *ngIf="newemployee.get('name')!.invalid">name is invalid</mat-error></mat-form-field></div><div>
+  <mat-form-field appearance="fill"><mat-label>Age</mat-label><input matInput type="text" placeholder="Age" formControlName="age" required>
+    <mat-error *ngIf="newemployee.get('age')!.invalid">age is invalid</mat-error></mat-form-field></div><div><mat-form-field appearance="fill">
+  <mat-label>Salary</mat-label><input matInput type="text" placeholder="Salary" formControlName="salary" required>
+  <mat-error *ngIf="newemployee.get('salary')!.invalid">salary is invalid</mat-error></mat-form-field>
+</div><div><button type="submit" mat-raised-button color="primary">Submit</button></div></form>
