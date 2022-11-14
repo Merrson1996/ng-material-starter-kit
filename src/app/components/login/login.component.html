@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-title>Login From</mat-card-title>
+<form [formGroup]="login" (ngSubmit)="onLoginSubmitted(login)"><div>
+  <mat-form-field appearance="fill"><mat-label>Login</mat-label>
+    <input matInput type="text" placeholder="Login" formControlName="login" required>
+    <mat-error *ngIf="login.get('login')!.invalid">login is invalid</mat-error></mat-form-field>
+</div><div><mat-form-field appearance="fill"><mat-label>Password</mat-label>
+  <input matInput type="text" placeholder="Password" formControlName="password" required>
+  <mat-error *ngIf="login.get('password')!.invalid">password is invalid</mat-error></mat-form-field></div><div>
+  <button type="submit" mat-raised-button color="primary">Submit</button></div></form>
+</mat-card>
