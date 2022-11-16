@@ -1,21 +1,12 @@
-<form [formGroup]="productForm" (ngSubmit)="onProductFormSubmitted(productForm)"><div>
-  <mat-form-field appearance="fill">
-    <mat-label>Title</mat-label>
-    <input matInput type="text" placeholder="Title" formControlName="title" required>
-    <mat-error *ngIf="productForm.get('title')!.invalid">title is invalid</mat-error>
-  </mat-form-field></div>
-  <div><mat-form-field appearance="fill"><mat-label>Prices</mat-label>
-    <input matInput type="text" placeholder="Prices" formControlName="prices" required>
-    <mat-error *ngIf="productForm.get('prices')!.invalid">prices is invalid
-    </mat-error></mat-form-field></div><div>
-    <mat-form-field appearance="fill"><mat-label>Description</mat-label>
-      <input matInput type="text" placeholder="Description" formControlName="description" required>
-      <mat-error *ngIf="productForm.get('description')!.invalid">description is invalid</mat-error></mat-form-field>
-  </div><div><mat-form-field appearance="fill"><mat-label>Category</mat-label>
-    <input matInput type="text" placeholder="Category" formControlName="category" required>
-    <mat-error *ngIf="productForm.get('category')!.invalid">category is invalid</mat-error>
-  </mat-form-field></div><div>
-    <mat-form-field appearance="fill"><mat-label>Image</mat-label>
-    <input matInput type="text" placeholder="Image" formControlName="image" required>
-      <mat-error *ngIf="productForm.get('image')!.invalid">image is invalid</mat-error>
-  </mat-form-field></div><div><button type="submit" mat-raised-button color="primary">Submit</button></div></form>
+<form [formGroup]="productForm" (ngSubmit)="onProductFormSubmitted(productForm)" xmlns="http://www.w3.org/1999/html">
+  <div><mat-form-field appearance="fill"><mat-label>Title</mat-label><input matInput type="text" placeholder="Title" formControlName="title" required>
+    <mat-error *ngIf="productForm.get('title')!.invalid">title is invalid</mat-error></mat-form-field></div><div><mat-form-field appearance="fill"><mat-label>Prices</mat-label><input matInput type="text" placeholder="Prices" formControlName="prices" required>
+  <mat-error *ngIf="productForm.get('prices')!.invalid">prices is invalid</mat-error></mat-form-field></div><div><mat-form-field appearance="fill"><mat-label>Description</mat-label><input matInput type="text" placeholder="Description" formControlName="description" required>
+  <mat-error *ngIf="productForm.get('description')!.invalid">description is invalid</mat-error></mat-form-field></div><div><mat-form-field appearance="fill"><mat-label>Category</mat-label><input matInput type="text" placeholder="Category" formControlName="category" required>
+  <mat-error *ngIf="productForm.get('category')!.invalid">category is invalid</mat-error></mat-form-field></div><div><mat-form-field appearance="fill"><mat-label>Image</mat-label><input matInput type="text" placeholder="Image" formControlName="image" required><mat-error *ngIf="productForm.get('image')!.invalid">image is invalid</mat-error></mat-form-field></div>
+ <div>
+
+      <mat-selection-list role="list"><mat-list-option role="listitem" *ngFor="let item of categories$ | async">{{item}}
+      </mat-list-option></mat-selection-list><div>
+  <button type="submit" mat-raised-button color="primary">Submit</button></div>
+  <form [formGroup]="productForm" (ngSubmit)="onProductFormSubmitted(productForm)"></form></div>
