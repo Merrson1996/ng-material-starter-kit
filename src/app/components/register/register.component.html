@@ -1,0 +1,21 @@
+<form [formGroup]="registerf" (ngSubmit)="onRegisterfSubmitted(registerf)"><div>
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label><input matInput type="text" placeholder="email" formControlName="email" required>
+    <mat-error *ngIf="registerf.get('email')!.invalid">email is invalid</mat-error></mat-form-field></div><div>
+  <mat-form-field appearance="fill"><mat-label>Username</mat-label><input matInput type="text" placeholder="username" formControlName="username" required>
+    <mat-error *ngIf="registerf.get('username')!.invalid">username is invalid</mat-error></mat-form-field></div><div>
+  <mat-form-field appearance="fill"><mat-label>Password</mat-label><input matInput type="text" placeholder="password" formControlName="password" required>
+    <mat-error *ngIf="registerf.get('password')!.invalid">password is invalid</mat-error></mat-form-field></div><div>
+  <mat-form-field appearance="fill"><mat-label>Firstname</mat-label><input matInput type="text" placeholder="firstname" formControlName="firstname" required>
+    <mat-error *ngIf="registerf.get('firstname')!.invalid">firstname is invalid</mat-error></mat-form-field></div><div>
+  <mat-form-field appearance="fill"><mat-label>Lastname</mat-label><input matInput type="text" placeholder="lastname" formControlName="lastname" required>
+    <mat-error *ngIf="registerf.get('lastname')!.invalid">lastname is invalid</mat-error></mat-form-field></div><div><mat-form-field appearance="fill">
+  <mat-label>City</mat-label><input matInput type="text" placeholder="city" formControlName="city" required>
+  <mat-error *ngIf="registerf.get('city')!.invalid">city is invalid</mat-error></mat-form-field></div><div><mat-form-field appearance="fill"><mat-label>Street</mat-label>
+  <input matInput type="text" placeholder="Street" formControlName="street" required>
+  <mat-error *ngIf="registerf.get('street')!.invalid">street is invalid</mat-error>
+</mat-form-field></div><div><mat-form-field appearance="fill"><mat-label>Number</mat-label><input matInput type="text" placeholder="Number" formControlName="number" required>
+  <mat-error *ngIf="registerf.get('number')!.invalid">number is invalid</mat-error></mat-form-field></div><div><mat-form-field appearance="fill">
+  <mat-label>Zipcode</mat-label><input matInput type="text" placeholder="Zipcode" formControlName="zipcode" required><mat-error *ngIf="registerf.get('zipcode')!.invalid">zipcode is invalid
+</mat-error></mat-form-field></div><div><mat-form-field appearance="fill"><mat-label>Phone</mat-label><input matInput type="text" placeholder="Phone" formControlName="phone" required>
+  <mat-error *ngIf="registerf.get('phone')!.invalid">phone is invalid</mat-error></mat-form-field></div><div><button type="submit" mat-raised-button color="primary">Submit</button></div></form>

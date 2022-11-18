@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,7 +11,6 @@ import {CategoriesListComponentModule} from "./components/categories-list/catego
 import {CategoriesServiceModule} from "./services/categories.service-module";
 import {CryptoListComponentModule} from "./components/crypto-list/crypto-list.component-module";
 import {CryptoServiceModule} from "./services/crypto.service-module";
-import {NewemployeeService} from "./services/newemployee.service";
 import {NewemployeeServiceModule} from "./services/newemployee.service-module";
 
 @NgModule({
