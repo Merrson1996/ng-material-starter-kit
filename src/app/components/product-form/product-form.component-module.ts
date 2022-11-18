@@ -7,9 +7,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { ProductFormComponent } from './product-form.component';
 import {MatChipsModule} from "@angular/material/chips";
+import {MatSelectModule} from "@angular/material/select";
+import {RouterLink} from "@angular/router";
 
 @NgModule({
-    imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, CommonModule, MatButtonModule, MatListModule, MatChipsModule],
+    imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, CommonModule, MatButtonModule, MatListModule, MatChipsModule, MatSelectModule, RouterLink],
   declarations: [ProductFormComponent],
   providers: [],
   exports: [ProductFormComponent]

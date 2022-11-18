@@ -30,7 +30,7 @@ export class ProductFormComponent {
       title: productForm.get("title")?.value,
       category: productForm.get("category")?.value,
       description: productForm.get("description")?.value,
-      price: productForm.get('Prices')?.value,
+      price: productForm.get('prices')?.value,
       image: productForm.get("image")?.value,
     }).subscribe();
   }

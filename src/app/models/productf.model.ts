@@ -3,5 +3,5 @@ export interface ProductfModel {
   readonly price: string;
   readonly description: string;
   readonly image: string;
-  readonly category: string;
+   category:{electronics:string;jewelery:string; "men's clothing":string;"women's clothing":string} ;
 }
