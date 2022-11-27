@@ -10,6 +10,10 @@ import {ProductFormComponent} from './components/product-form/product-form.compo
 import {NewemployeeFormComponent} from './components/newemployee-form/newemployee-form.component';
 import {LoginComponent} from './components/login/login.component';
 import {RegisterComponent} from './components/register/register.component';
+import {CategoryyyComponent} from './components/categoryyy/categoryyy.component';
+import {ProductttComponent} from './components/producttt/producttt.component';
+import {ProductDetailsComponent} from './components/product-details/product-details.component';
+import {AgePredictionComponent} from './components/age-prediction/age-prediction.component';
 import {ProductListComponentModule} from './components/product-list/product-list.component-module';
 import {ProductServiceModule} from './services/product.service-module';
 import {CategoriesListComponentModule} from './components/categories-list/categories-list.component-module';
@@ -28,6 +32,14 @@ import {LoginComponentModule} from './components/login/login.component-module';
 import {LoginServiceModule} from './services/login.service-module';
 import {RegisterServiceModule} from './services/register.service-module';
 import {RegisterComponentModule} from './components/register/register.component-module';
+import {CategoryyyComponentModule} from './components/categoryyy/categoryyy.component-module';
+import {CategoriesssServiceModule} from './services/categoriesss.service-module';
+import {ProductttComponentModule} from './components/producttt/producttt.component-module';
+import {ProductttServiceModule} from './services/producttt.service-module';
+import {ProductDetailsComponentModule} from './components/product-details/product-details.component-module';
+import {ProductcwServiceModule} from './services/productcw.service-module';
+import {AgePredictionComponentModule} from './components/age-prediction/age-prediction.component-module';
+import {AgePredictionServiceModule} from './services/age-prediction.service-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([{path: 'products', component: ProductListComponent}, {
@@ -42,10 +54,17 @@ import {RegisterComponentModule} from './components/register/register.component-
   }, {path: 'create-product', component: ProductFormComponent}, {
     path: 'create-employee',
     component: NewemployeeFormComponent
-  }, {path: 'login', component: LoginComponent}, {
-    path: 'register',
-    component: RegisterComponent
-  }]), ProductListComponentModule, ProductServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CryptoListComponentModule, CryptoServiceModule, HolidayListComponentModule, HolidayServiceModule, CheckboxListComponentModule, MenuComponentModule, ProductFormComponentModule, ProductformServiceModule, NewemployeeFormComponentModule, NewemployeeServiceModule, LoginComponentModule, LoginServiceModule, RegisterServiceModule, RegisterComponentModule],
+  }, {path: 'login', component: LoginComponent}, {path: 'register', component: RegisterComponent}, {
+    path: 'categoryyy',
+    component: CategoryyyComponent
+  }, {path: 'producttt', component: ProductttComponent}, {
+    path: 'product/:id',
+    component: ProductDetailsComponent
+  }, {
+    path: 'age/:name',
+    component: AgePredictionComponent
+  }]), ProductListComponentModule, ProductServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CryptoListComponentModule, CryptoServiceModule, HolidayListComponentModule, HolidayServiceModule, CheckboxListComponentModule, MenuComponentModule, ProductFormComponentModule, ProductformServiceModule, NewemployeeFormComponentModule, NewemployeeServiceModule, LoginComponentModule, LoginServiceModule, RegisterServiceModule, RegisterComponentModule, CategoryyyComponentModule, CategoriesssServiceModule, ProductttComponentModule, ProductttServiceModule, ProductDetailsComponentModule, ProductcwServiceModule, AgePredictionComponentModule, AgePredictionServiceModule],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
