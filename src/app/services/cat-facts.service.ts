@@ -8,7 +8,8 @@ export class CatFactsService {
   constructor(private _httpClient: HttpClient) {
   }
 
-  getOne(fact: string): Observable<CatFactModel> {
-    return this._httpClient.get<CatFactModel>('https://catfact.ninja/fact'+fact);
+
+  getAll(): Observable<CatFactModel> {
+    return this._httpClient.get<CatFactModel>('https://catfact.ninja/fact');
   }
 }

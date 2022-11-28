@@ -14,6 +14,7 @@ import {CategoryyyComponent} from './components/categoryyy/categoryyy.component'
 import {ProductttComponent} from './components/producttt/producttt.component';
 import {ProductDetailsComponent} from './components/product-details/product-details.component';
 import {AgePredictionComponent} from './components/age-prediction/age-prediction.component';
+import {CatFactsComponent} from './components/cat-facts/cat-facts.component';
 import {ProductListComponentModule} from './components/product-list/product-list.component-module';
 import {ProductServiceModule} from './services/product.service-module';
 import {CategoriesListComponentModule} from './components/categories-list/categories-list.component-module';
@@ -40,6 +41,8 @@ import {ProductDetailsComponentModule} from './components/product-details/produc
 import {ProductcwServiceModule} from './services/productcw.service-module';
 import {AgePredictionComponentModule} from './components/age-prediction/age-prediction.component-module';
 import {AgePredictionServiceModule} from './services/age-prediction.service-module';
+import {CatFactsComponentModule} from './components/cat-facts/cat-facts.component-module';
+import {CatFactsServiceModule} from './services/cat-facts.service-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([{path: 'products', component: ProductListComponent}, {
@@ -60,10 +63,10 @@ import {AgePredictionServiceModule} from './services/age-prediction.service-modu
   }, {path: 'producttt', component: ProductttComponent}, {
     path: 'product/:id',
     component: ProductDetailsComponent
-  }, {
-    path: 'age/:name',
-    component: AgePredictionComponent
-  }]), ProductListComponentModule, ProductServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CryptoListComponentModule, CryptoServiceModule, HolidayListComponentModule, HolidayServiceModule, CheckboxListComponentModule, MenuComponentModule, ProductFormComponentModule, ProductformServiceModule, NewemployeeFormComponentModule, NewemployeeServiceModule, LoginComponentModule, LoginServiceModule, RegisterServiceModule, RegisterComponentModule, CategoryyyComponentModule, CategoriesssServiceModule, ProductttComponentModule, ProductttServiceModule, ProductDetailsComponentModule, ProductcwServiceModule, AgePredictionComponentModule, AgePredictionServiceModule],
+  }, {path: 'age/:name', component: AgePredictionComponent}, {
+    path: 'cat-fact',
+    component: CatFactsComponent
+  }]), ProductListComponentModule, ProductServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CryptoListComponentModule, CryptoServiceModule, HolidayListComponentModule, HolidayServiceModule, CheckboxListComponentModule, MenuComponentModule, ProductFormComponentModule, ProductformServiceModule, NewemployeeFormComponentModule, NewemployeeServiceModule, LoginComponentModule, LoginServiceModule, RegisterServiceModule, RegisterComponentModule, CategoryyyComponentModule, CategoriesssServiceModule, ProductttComponentModule, ProductttServiceModule, ProductDetailsComponentModule, ProductcwServiceModule, AgePredictionComponentModule, AgePredictionServiceModule, CatFactsComponentModule, CatFactsServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
