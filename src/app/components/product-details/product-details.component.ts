@@ -13,7 +13,7 @@ import {ProductcwService} from '../../services/productcw.service';
 })
 export class ProductDetailsComponent {
   readonly productDetails$: Observable<ProductModel> = this._activatedRoute.params
-    .pipe(switchMap(data => this._productcwService.getOne(data['id'])));
+    .pipe(switchMap(data => this._productcwService.getOne(data['product'])));
 
   constructor(private _activatedRoute: ActivatedRoute, private _productcwService: ProductcwService) {
   }

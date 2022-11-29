@@ -79,7 +79,7 @@
     }
   },
   "title-description": {
-    "containter": "<ng-container *ngIf=\"$detailVariable$ |async as $itemVariable$\">$content$</ng-container> ",
+    "container": "<ng-container *ngIf=\"$detailVariable$ |async as $itemVariable$\">$content$</ng-container> ",
     "content": "<h1>$title$</h1>\"<p>$description$</p>"
   }
 }
