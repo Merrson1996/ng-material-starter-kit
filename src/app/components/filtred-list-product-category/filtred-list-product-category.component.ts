@@ -16,7 +16,7 @@ export class FiltredListProductCategoryComponent {
   readonly Products$: Observable<ProductModel[]> = combineLatest([
     this._productsAdvancedService.getAll(),
     this._activatedRoute.params
-  ]).pipe(map(([products,params]:[ProductModel[],Params]) => {
+  ]).pipe(map(([products,params]) => {
     return products.filter((product:ProductModel)=>product.category === params['category']);
   }));
 
