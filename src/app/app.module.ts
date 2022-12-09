@@ -12,12 +12,14 @@ import {CategoriesServiceModule} from "./services/categories.service-module";
 import {CryptoListComponentModule} from "./components/crypto-list/crypto-list.component-module";
 import {CryptoServiceModule} from "./services/crypto.service-module";
 import {NewemployeeServiceModule} from "./services/newemployee.service-module";
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-title></mat-card-title>
+  <mat-card-content>
+    <ng-container *ngFor=" let item of employe| async" (click)="sort(item)">   {{item}} </ng-container>
+  </mat-card-content>
+  <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let item of salary$ | async">{{item.employeeName}}{{item.employeeSalary}}</mat-list-item>
+  </mat-list>
+</mat-card>
