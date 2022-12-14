@@ -1,10 +1,11 @@
 export interface CartUserModel {
-  readonly id: number;
-  readonly userId: number;
+  readonly id: string;
+  readonly userId: string;
   readonly date: string;
   products:
     [{
-      productId: number;
-      quantity: number;
+      productId: string;
+      quantity: string;
     }] ;
+  readonly __v:string;
 }
